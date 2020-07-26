@@ -1,0 +1,92 @@
+<html>
+    <style>
+        body {
+       background-image:url('images/img11.jpg');
+       background-repeat: no-repeat;
+       background-size:cover;
+       background-attachment: fixed;
+     }
+   </style>
+   <body>
+    <h2>
+        <h1><center>SQL</center></h1>
+      <p> SQL (Structured Query Language) is a standard database programming language used for accessing and manipulating data in a database. This SQL tutorial series will help you to get started learning SQL from basics.
+    </p> 
+<p>
+    <h2>What Wil You Get Learning SQL?</h2></p>
+    <p style="font-size: large;">
+    SQL gives unique learning and database handling techniques on Structured Query language and will help you make better command over the SQL queries and to deal with these codes efficiently. Since SQL helps you to include database creation, database or table deletion, fetching row data and modifying those data, etc., in parallel, SQL makes things automatic and smooth for end-users to access and deal with that application's data efficiently.
+</p>
+<p>
+    <h2>Required Knowledge</h2></p>
+    <p style="font-size: large;">
+    The basic understanding of computer programming and RDBMS Concepts will help you to understand the SQL quickly.</p>
+    <h2>SQL Example</h2>
+  <p style="font-size: large;">  The SQL query to select all records from the users' table:<br>
+    SELECT * FROM users;<br>
+    The SQL query to delete single records from users table by using where clause:<br>
+DELETE FROM users WHERE user_id=299;<br>
+</p>
+<h2>SQL Commands</h2>
+<p style="font-size: large;">
+    These are the some important SQL command:<br><br>
+
+    SELECT: it extracts data from a database.<br>
+    UPDATE: it updates data in database.<br>
+    DELETE: it deletes data from database.<br>
+    CREATE TABLE: it creates a new table.<br>
+    ALTER TABLE: it is used to modify the table.<br>
+    DROP TABLE: it deletes a table.<br>
+    CREATE DATABASE: it creates a new database.<br>
+    ALTER DATABASE: It is used to modify a database.<br>
+    INSERT INTO: it inserts new data into a database.<br>
+    CREATE INDEX: it is used to create an index (search key).<br>
+    DROP INDEX: it deletes an index.<br>
+
+</p>
+<h2>SQL CREATE TABLE</h2>
+<p style="font-size: large;">
+    The SQL CREATE TABLE statement is used to create a new table.
+<br><br><b>Syntax</b>
+<br><i>CREATE TABLE table_name(
+<br>column1 datatype,
+<br>column2 datatype,
+<br>column3 datatype,
+<br>.....
+<br>columnN datatype,
+<br>PRIMARY KEY( one or more columns )
+ <br>);</i>
+ <br><br>CREATE TABLE is the keyword telling the database system what you want to do. In this case, you want to create a new table. The unique name or identifier for the table follows the CREATE TABLE statement.
+
+<br> Then in brackets comes the list defining each column in the table and what sort of data type it is. The syntax becomes clearer with the following example.
+ 
+ <br>A copy of an existing table can be created using a combination of the CREATE TABLE statement and the SELECT statement. You can check the complete details at Create Table Using another Table
+<br><br><b>Example</b>
+<br><br>The following code block is an example, which creates a CUSTOMERS table with an ID as a primary key and NOT NULL are the constraints showing that these fields cannot be NULL while creating records in this table −
+</p>
+<i>SQL> CREATE TABLE CUSTOMERS(
+<br>ID   INT              NOT NULL,
+<br> NAME VARCHAR (20)     NOT NULL,
+<br>AGE  INT              NOT NULL,
+<br>ADDRESS  CHAR (25) ,
+<br>SALARY   DECIMAL (18, 2),       
+<br> PRIMARY KEY (ID)
+ <br>);</i>
+ <p style="font-size: large;">
+    You can verify if your table has been created successfully by looking at the message displayed by the SQL server, otherwise you can use the DESC command as follows −</p>
+    SQL> DESC CUSTOMERS;
+   <br> +---------+---------------+------+-----+---------+-------+
+   <br> | Field   | Type          | Null | Key | Default | Extra |
+   <br> +---------+---------------+------+-----+---------+-------+
+    <br>| ID      | int(11)       | NO   | PRI |         |       |
+   <br> | NAME    | varchar(20)   | NO   |     |         |       |
+   <br> | AGE     | int(11)       | NO   |     |         |       |
+   <br> | ADDRESS | char(25)      | YES  |     | NULL    |       |
+    <br>| SALARY  | decimal(18,2) | YES  |     | NULL    |       |
+   <br> +---------+---------------+------+-----+---------+-------+
+   <br> 5 rows in set (0.00 sec)
+  <p style="font-size: large;">Now, you have CUSTOMERS table available in your database which you can use to store the required information related to customers.
+</p>
+    </h2>
+    </body>
+</html>
